@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-container {
+  background: salmon;
+  padding: 16px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.phones {
+  border: 2px solid red;
+  width: 215px;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 340px) {
+  .phone-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .phone-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
